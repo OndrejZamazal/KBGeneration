@@ -239,7 +239,7 @@ object GenerateKB {
 		        +"<id_proposition>"+antecedent+"</id_proposition><negation>0</negation></literal></conjunction>"
 		        +"</condition><conclusions><conclusion><id_attribute>Benchmark</id_attribute>"
 		        +"<id_proposition>"+succedent+"</id_proposition><negation>0</negation>"
-		        +"<weight>0.200</weight></conclusion></conclusions></compositional_rule>")
+		        +"<weight>0.300</weight></conclusion></conclusions></compositional_rule>")
 		    //for negative rules
 		    val pole1: mutable.Set[String] = usedAntecedentsMinor.getOrElse(succedent, mutable.Set.empty[String])
 		    pole1 += antecedent
@@ -261,7 +261,7 @@ object GenerateKB {
 		        +"</condition><conclusions><conclusion><id_attribute>Benchmark</id_attribute>"
 		        +"<id_proposition>"+benchmark+"</id_proposition><negation>1</negation>"
 		        //+"<weight>0.500</weight></conclusion></conclusions></compositional_rule>")
-		        +"<weight>0.300</weight></conclusion></conclusions></compositional_rule>")
+		        +"<weight>0.250</weight></conclusion></conclusions></compositional_rule>")
 		      neg +=1
 		    }
 		  }
